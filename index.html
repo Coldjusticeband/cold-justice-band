@@ -20,9 +20,11 @@ header {
 }
 
 header img {
-    width: 280px;
+    width: 400px;
     max-width: 90%;
     margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
 }
 
 h1 {
@@ -39,7 +41,7 @@ h1 {
 }
 
 section {
-    padding: 60px 20px;
+    padding: 40px 20px;
     max-width: 900px;
     margin: auto;
 }
@@ -50,13 +52,6 @@ h2 {
     padding-bottom: 10px;
     margin-bottom: 30px;
     letter-spacing: 2px;
-}
-
-.show {
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color: #1a1a1a;
-    border-left: 4px solid #888;
 }
 
 a {
@@ -75,6 +70,7 @@ footer {
     font-size: 0.9em;
     color: #777;
 }
+
 .button {
     display: inline-block;
     margin-top: 20px;
@@ -84,14 +80,10 @@ footer {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
 .button:hover {
     background-color: #888;
     color: #000;
-}
-iframe {
-    width: 100%;
-    height: 315px;
-    margin-bottom: 20px;
 }
 </style>
 </head>
@@ -99,8 +91,7 @@ iframe {
 <body>
 
 <header>
-    <img src="Screenshot_20250830_201543_Gallery.jpg" alt="Cold Justice Band Photo" style="max-width:100%; height:auto;">
-
+    <img src="Screenshot_20250830_201543_Gallery.jpg" alt="Cold Justice Band">
     <h1>COLD JUSTICE BAND</h1>
     <div class="tagline">Oklahoma Red Dirt with a Classic Rock Edge</div>
 </header>
@@ -116,49 +107,27 @@ iframe {
 
 <section id="shows">
     <h2>Show Dates</h2>
-
-    <div class="show">
-        <strong>March 22, 2026</strong><br>
-        The Rusty Spur – Tulsa, OK
-    </div>
-
-    <div class="show">
-        <strong>April 5, 2026</strong><br>
-        Red River Roadhouse – Oklahoma City, OK
-    </div>
-
-    <p>For booking inquiries, contact us below.</p>
-</section>
-
-<section id="music">
-    <h2>Music</h2>
-
-    <!-- Replace with your Spotify or music embed -->
-    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-        frameborder="0" allowfullscreen></iframe>
-
-</section>
-
-<section id="videos">
-    <h2>Videos</h2>
-
-    <!-- Replace with your YouTube video links -->
-    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-        frameborder="0" allowfullscreen></iframe>
-
+    <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script>
+    <a class="bit-widget-initializer" 
+       data-artist-name="Cold Justice" 
+       data-display-local-dates="true" 
+       data-display-past-dates="false" 
+       data-auto-style="true" 
+       data-text-color="#ffffff" 
+       data-link-color="#888888" 
+       data-background-color="transparent"
+       data-display-limit="10">
+    </a>
+    <p style="margin-top:20px;">For booking inquiries, contact us below.</p>
 </section>
 
 <section id="contact">
     <h2>Contact</h2>
-
     <p>Email: <a href="mailto:booking@coldjusticeband.com">booking@coldjusticeband.com</a></p>
-
     <p>
-        <a href="#">Facebook</a> |
-        <a href="#">Instagram</a> |
-        <a href="#">YouTube</a>
+        <a href="https://facebook.com/coldjusticeband">Facebook</a> |
+        <a href="https://instagram.com/coldjusticeband">Instagram</a>
     </p>
-
     <a class="button" href="mailto:booking@coldjusticeband.com">Book the Band</a>
 </section>
 
