@@ -1,1 +1,46 @@
+/* General Page Styling */
+body {
+    font-family: sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #000;
+    padding: 20px 0;
+}
+
+/* THE IMAGE SIZE FIX */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    /* This makes them smaller - you can change 250px to anything you like */
+    max-width: 250px; 
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #444;
+}
+
+/* Show Dates Styling */
+#shows ul {
+    list-style: none;
+    padding: 0;
+}
+
+#shows li {
+    background: #222;
+    margin: 10px auto;
+    padding: 10px;
+    max-width: 400px;
+    border-radius: 5px;
+}
 
